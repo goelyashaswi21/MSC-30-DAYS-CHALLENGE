@@ -1,0 +1,17 @@
+//MSC 30 DAYS CHALLENGE
+//DAY 2 MSC 30 DAYS CHALLENGE
+#include <iostream>
+#include <cstdio>
+#include<iomanip>
+using namespace std;
+
+int main() {
+    int a;long b;char c;float d;double e;
+    cin>>a>>b>>c>>d>>e;
+    cout<<a<<endl;
+    cout<<b<<endl;
+    cout<<fixed<<setprecision(3)<<c<<endl;
+    cout<<d<<endl;
+    cout<<fixed<<setprecision(9)<<e<<endl;
+    return 0;
+}
