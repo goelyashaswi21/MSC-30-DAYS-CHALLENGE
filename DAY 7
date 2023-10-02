@@ -1,0 +1,22 @@
+//MSC 30 DAYS CHALLENGE
+//DAY 7 MSC 30 DAYS CHALLENGE
+
+//The code to print the first common multiple of two numbers taken as input
+#include<iostream>
+using namespace std;
+int main(){
+    int x,y;
+    cout<<"Enter the value of x "<<endl;
+    cin>>x;
+    cout<<"Enter the value of y "<<endl;
+    cin>>y;
+     int i=x;
+    while(true){
+        if(i%y==0){
+            cout<<"The first common multiple of the two numbers is"<<i<<endl;
+            break;
+        }
+        i+=x;
+    }
+    return 0;
+}
