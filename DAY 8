@@ -1,0 +1,20 @@
+//MSC 30 DAYS CHALLENGE
+//DAY 8 MSC 30 DAYS CHALLENGE
+//TARGET SUM PAIRS
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int array[]={0,1,2,3,4,5,6,7,8,9};
+    int size=10;
+    int targetsum=10;
+    int pairs=0;
+    for(int i=0;i<size;i++){
+        for(int j=i+1;j<size;j++){
+            if( array[i]+array[j]==targetsum){
+                pairs++;
+            }
+        }
+    }
+    cout<<"The number of such pairs with targetsum 10 are "<<pairs<<endl;
+    return 0;
+}
