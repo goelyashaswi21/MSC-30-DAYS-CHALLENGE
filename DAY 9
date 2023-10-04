@@ -1,0 +1,18 @@
+//MSC 30 DAYS C++ CODING CHALLENGE
+//DAY 9 MSC 30 DAYS CHALLENGE
+//CODE TO COUNT NUMBER OF DIGITS OF AN INPUT NUMBER
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    cout<<"Hello World"<<endl;
+    int n;
+    cout<<"ENTER THE VALUE OF NUMBER WHOSE NUMBER OF DIGITS IS TO BE FOUND"<<endl;
+    cin>>n;
+    int digits=0;
+    while(n>0){
+        digits++;
+        n/=10;
+    }
+    cout<<"The number of digits in the number is "<<digits<<endl;
+    return 0;
+}
