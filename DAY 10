@@ -1,0 +1,18 @@
+//MSC 30 DAYS CHALLENGE 
+//DAY 10 MSC 30 DAYS CHALLENGE
+// CODE TO PRINT REVERSE OF A NUMBER
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int x;
+    cout<<"Enter the value of number X "<<endl;
+    cin>>x;
+    int reverse =0;
+    while(x>0){
+    int lastdigit=x%10;
+    reverse=reverse*10+lastdigit;
+    x/=10;
+    }
+    cout<<"The reverse of number taken as input is"<<reverse <<endl;
+    return 0;
+}
