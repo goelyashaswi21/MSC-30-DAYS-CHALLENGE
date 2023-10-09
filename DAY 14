@@ -1,0 +1,17 @@
+//MSC  30 DAYS CHALLENGE
+//DAY 14 MSC 30 DAYS C++ CODE CHALLENGE
+//SWAPPING TWO NUMBERS WITH USE OF ANOTHER THIRD NUMBER
+#include<iostream>
+using namespace std;
+int main(){
+   int num1 ;
+   int num2;
+   num1=200;
+   num2=250;
+   cout<<num1<<" "<<num2<<endl;
+    int temp = num1;
+    num1 = num2;
+    num2 = temp;
+    cout<<num1<<" "<<num2<<endl;
+    return 0;
+}
