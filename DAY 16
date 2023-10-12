@@ -1,0 +1,26 @@
+//MSC 30 DAYS CHALLENGE CODING
+//DAY 16 MSC 30 DAYS C++ QUESTION SOLVING CHALLENGE
+//(Palindrome is a number which when reversed we get the same value)
+//WAP to check if a number is a palindrome or not
+#include<bits/stdc++.h>
+using namespace std;
+int reverse(int a){
+    int res = 0;
+    while(a!=0){
+        int dig = a%10;
+        res = res*10 + dig;
+        a =a/10;
+    }
+    return res;
+}
+int main() {
+    int a ;
+    cout<<"ENTER THE VALUE OF a"<<endl;
+    cin>>a;
+    int b = reverse(a);
+    if(a == b)
+        cout<<"Palindrome";
+    else
+        cout<<"Not palindrome";
+    return 0;
+}
