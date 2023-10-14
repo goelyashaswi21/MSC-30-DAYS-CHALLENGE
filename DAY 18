@@ -1,0 +1,24 @@
+//MSC 30 DAYS CHALLENGE
+// DAY 18 MSC 30 DAYS CHALLENGE
+//CODE TO CHECK IF A NUMBER IS PRIME OR NOT
+#include<bits/stdc++.h>
+using namespace std;
+int main() {
+    int a ;
+    cout<<"ENTER THE VALUE OF A "<<endl;
+    cin>>a;
+    int b = 2;
+    bool prime = true;
+    while(b!=a){
+        if(a%b == 0)
+            {
+                prime = false;
+                break;
+            }
+        b++;
+    }
+    if(prime)
+    cout<<"prime";
+    else cout<<"not prime";
+    return 0;
+}
