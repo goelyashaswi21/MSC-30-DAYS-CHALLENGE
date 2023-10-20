@@ -1,0 +1,21 @@
+//MSC 30 DAYS CHALLENGE
+//DAY 25 MSC 30 DAYS CHALLENGE
+// CODE TO SORT AN ARRAY IN DECREASING ODER
+#include <bits/stdc++>  
+using namespace std;  
+int size = 10;  
+int main() {  
+  int array[size] = {3, 7, 1, 5, 2, 8, 4, 6, 9, 0};  
+  cout << "Original array: ";  
+  for (int i = 0; i < size; i++) {  
+    cout << array[i] << " ";  
+  }  
+  cout << endl;  
+  sort(array, array + size, greater<int>());  
+  cout << "Sorted array: ";  
+  for (int i = 0; i < size; i++) {  
+    cout << array[i] << " ";  
+  }  
+  cout << endl;  
+  return 0;  
+}  
