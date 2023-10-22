@@ -1,0 +1,15 @@
+//MSC 30 DAYS CHALLENGE
+//DAY 27MSC 30 DAYS CHALLENGE
+//Use of pairs to take two diff data types in 1 line
+#include <iostream>
+#include <utility>
+using namespace std;
+int main()
+{
+	pair<int, char> PAIR1;
+	PAIR1.first = 100;
+	PAIR1.second = 'G';
+	cout << PAIR1.first << " "<<endl;
+	cout << PAIR1.second << endl;
+	return 0;
+}
