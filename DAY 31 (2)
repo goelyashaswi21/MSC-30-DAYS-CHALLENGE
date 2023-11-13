@@ -1,0 +1,16 @@
+//PHASE 2 C++
+//PROBLEM SOLVING USING RECURSIONS 
+//QUESTION:TO PRINT SUM OF DIGITS OF A NUMBER USING RECURSIONS 
+#include<bits/stdc++.h>
+using namespace std;
+
+int f(int n){
+    if(n>=0 and n<=9)return n;
+    return f(n/10)+(n%10);
+}
+int main(){
+    cout<<"CODE TO FIND SUM OF DIGITS OF A NUMBER USING RECURSION "<<endl;
+    int answer=f(1987234);
+    cout<<answer<<endl;
+    return 0;
+}
