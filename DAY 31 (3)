@@ -1,0 +1,17 @@
+//RECURSIONS C++
+//C++ PHASE 2 
+//PROBLEM SOLVING USING RECURSIONS 
+//PROBLEM 3 
+//QUESTION : GIVEN TWO NUMBERS P AND Q FIND P^Q USING RECURSIONS 
+#include<bits/stdc++.h>
+using namespace std;
+int f(int p,int q){
+    if(q==0)return 1;
+    return p*f(p,q-1);
+}
+int main(){
+    cout<<"CODE TO PRNT THE VALUE OF P ^Q FOR GIVEN P AND Q"<<endl;
+    int answer=f(4,6);
+    cout<<answer<<endl;
+    return 0;
+}
