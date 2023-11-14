@@ -1,0 +1,14 @@
+//PHASE 2 C++
+//PROBLEM SOLVING USING RECURSIONS ;
+//QUESTION: TO PRINT ALL NATURAL NUMBERS TO A GIVEN LIMIT WITH A SPACE IN BETEWEEN USING RECURSIONS
+#include<bits/stdc++.h>
+using namespace std;
+void f(int n){
+    if(n<1)return ;
+    f(n-1);
+    cout<<n<<" ";
+}
+int main(){
+f(120);
+    return 0;
+}
