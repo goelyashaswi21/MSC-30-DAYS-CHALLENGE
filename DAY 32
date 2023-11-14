@@ -1,0 +1,17 @@
+//PHASE 2 C++
+//PROBLEM SOLVING USING RECURSION C++
+//QUESTION: CODE TO FIND THE MAX VALUE OF ALL ELEMENTS IN AN ARRAY
+#include<bits/stdc++.h>
+using namespace std;
+int f(int*arr,int idx,int n){
+    if(idx==n-1){
+        return arr[idx];
+    }
+    return max(arr[idx],f(arr,idx+1,n));
+}
+int main(){
+    int n=10;
+    int arr[]={11,1,13,14,15,16,121,17,3,23};
+    cout<<f(arr,0,n);
+    return 0;
+}
