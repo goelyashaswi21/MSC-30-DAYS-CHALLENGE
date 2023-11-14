@@ -1,0 +1,19 @@
+//PHASE 2 C++
+//PROBLEM SOLVING USING RECURSIONS 
+//QUESTION:CODE TO FIND THE SUM OF ALL ELEMENTS OF ARRAY USING RECURSIONS
+
+#include<bits/stdc++.h>
+using namespace std;
+int f(int*arr,int idx,int n){
+    if(idx==n-1){
+        return arr[idx];
+    }
+        return (arr[idx])+f(arr,idx+1,n);
+    
+}
+    int main(){
+        int n=10;
+        int arr[]={11,1,14,13,15,16,17,121,17,3,23};
+        cout<<f(arr,0,n);
+        return 0;
+    }
